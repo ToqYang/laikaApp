@@ -1,4 +1,4 @@
-export const colors = {
+export default {
   laikaColor: '#653f90',
   slatePurple: '#750080',
   slatePurpleLight: '#9b50b5',

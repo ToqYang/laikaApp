@@ -1,26 +1,31 @@
 import React, {useState, useEffect} from 'react';
 import {TextInput, StyleSheet} from 'react-native';
-import colors from '../styles/colors';
 import text from '../styles/text';
+import colors from '../styles/colors';
 
-const Input = ({content = 'Empty', disabled = true, small = 1}) => {
+const Input = ({
+  content = 'Empty',
+  disabled = true,
+  light = 0,
+  optionalStyle,
+}) => {
   const [textForm, onChangeTextForm] = useState('');
 
   useEffect(() => {
     onChangeTextForm(content);
   }, [content]);
 
-  const isSmall = small ? {width: 120} : {flex: 1, height: 40};
+  const colorBack = light
+    ? {backgroundColor: '#bf93f1'}
+    : {backgroundColor: colors.slatePurpleLight};
   return (
-    <>
-      <TextInput
-        style={[isSmall, inputFormat.input, text.sectionCaption]}
-        onChangeText={onChangeTextForm}
-        value={textForm}
-        disabled={disabled}
-        multiline={true}
-      />
-    </>
+    <TextInput
+      style={[inputFormat.input, text.sectionCaption, colorBack, optionalStyle]}
+      onChangeText={onChangeTextForm}
+      value={textForm}
+      editable={!disabled}
+      multiline={true}
+    />
   );
 };
 
@@ -28,8 +33,9 @@ export default Input;
 
 const inputFormat = StyleSheet.create({
   input: {
+    flex: 1,
+    width: '100%',
     paddingHorizontal: 20,
-    backgroundColor: colors.backgroundPrimary,
     borderRadius: 10,
     textAlign: 'center',
     color: 'white',

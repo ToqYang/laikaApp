@@ -6,6 +6,11 @@ const text = StyleSheet.create({
     fontWeight: '700',
     textAlign: 'center',
   },
+  sectionTitleLow: {
+    fontSize: 28,
+    fontWeight: '700',
+    textAlign: 'center',
+  },
   sectionSubtitle: {
     fontSize: 24,
     fontWeight: '600',

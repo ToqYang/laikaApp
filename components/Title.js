@@ -8,19 +8,26 @@ const Title = ({
   isCapitalize = 0,
   isHighlight = 0,
   content = 'Empty',
+  isLowTitle = 0,
 }) => {
   const uppercase = isUppercase
     ? {textTransform: 'uppercase'}
     : isCapitalize
     ? {textTransform: 'capitalize'}
-    : {textTransform: 'lowercase'};
+    : {textTransform: 'none'};
 
   const highlight = isHighlight
     ? {color: colors.sunshineGold}
     : {color: 'white'};
   return (
     <>
-      <Text style={[text.sectionTitle, uppercase, highlight]}>{content}</Text>
+      {isLowTitle ? (
+        <Text style={[text.sectionTitleLow, uppercase, highlight]}>
+          {content}
+        </Text>
+      ) : (
+        <Text style={[text.sectionTitle, uppercase, highlight]}>{content}</Text>
+      )}
     </>
   );
 };

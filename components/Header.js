@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Image} from 'react-native';
 import colors from '../styles/colors';
-import Title from './Title';
 
 const Header = () => {
   return (

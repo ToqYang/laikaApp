@@ -32,7 +32,7 @@ const benefitials = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignItems: 'flex-start',
-    marginVertical: 15,
+    marginVertical: 10,
   },
   textContainer: {
     flex: 3,

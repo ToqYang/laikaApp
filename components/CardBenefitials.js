@@ -176,7 +176,7 @@ const CardBenefitials = () => {
                 </View>
               </View>
               {/* Btn no input */}
-              <View>
+              <View style={{width: 120}}>
                 <Input content="Lo que equivale a $5.260 el mes" />
               </View>
             </View>

@@ -14,14 +14,15 @@ const TextDescription = ({
   const highlight = isHighlight
     ? {color: colors.sunshineGold}
     : isFade
-    ? {color: 'white', opacity: 0.7}
-    : {color: 'white'};
+    ? {color: 'rgba(255, 255, 255, 0.7)'}
+    : {color: 'rgba(255, 255, 255, 1)'};
 
-  const textBold = textWeight ? {fontWeight: 'bold'} : {fontWeight: '400'};
+  const textBold = textWeight ? {fontWeight: 'bold'} : {fontWeight: '500'};
   return (
     <>
       {versionLow ? (
-        <Text style={[text.sectionDescription, highlight, textBold]}>
+        <Text
+          style={[text.sectionDescription, highlight, textBold, optionalStyle]}>
           {content}
         </Text>
       ) : (

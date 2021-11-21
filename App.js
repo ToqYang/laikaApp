@@ -5,36 +5,21 @@ import {
   StatusBar,
   StyleSheet,
   View,
+  Text,
 } from 'react-native';
+import Header from './components/Header';
+import LaikaMember from './components/LaikaMember';
 
 const App = () => {
   return (
     <SafeAreaView>
       <StatusBar />
       <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View></View>
+        <Header />
+        <LaikaMember />
       </ScrollView>
     </SafeAreaView>
   );
 };
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;

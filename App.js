@@ -9,14 +9,18 @@ import {
 } from 'react-native';
 import Header from './components/Header';
 import LaikaMember from './components/LaikaMember';
+import CardBenefitials from './components/CardBenefitials';
 
 const App = () => {
   return (
-    <SafeAreaView>
-      <StatusBar />
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
+    <SafeAreaView style={{flex: 1}}>
+      {/* <StatusBar /> */}
+      <ScrollView
+        contentInsetAdjustmentBehavior="automatic"
+        style={{backgroundColor: 'yellow', height: 10000000}}>
         <Header />
         <LaikaMember />
+        <CardBenefitials />
       </ScrollView>
     </SafeAreaView>
   );

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import LaikaMember from './components/LaikaMember';
 import CardBenefitials from './components/CardBenefitials';
 import Savings from './components/Savings';
+import Experiences from './components/Experiences';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <LaikaMember />
         <CardBenefitials />
         <Savings />
+        <Experiences />
       </ScrollView>
     </SafeAreaView>
   );

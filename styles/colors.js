@@ -6,6 +6,7 @@ export default {
   sunshineGold: '#ffd600',
   blueSky: '#6670e8',
   orangeOrange: '#ff6b00',
+  backgroundPrimary: '#a47cd0',
 };
 
 export const laikaColorsFade = {

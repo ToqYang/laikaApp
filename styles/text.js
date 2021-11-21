@@ -11,16 +11,19 @@ const text = StyleSheet.create({
     fontWeight: '600',
   },
   sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '400',
   },
   sectionDescriptionLow: {
-    marginTop: 8,
     fontSize: 12,
     fontWeight: '400',
   },
-  highlight: {
+  sectionCaption: {
+    fontSize: 10,
+    fontWeight: 'bold',
+  },
+  button: {
+    fontSize: 14,
     fontWeight: '700',
   },
 });

@@ -23,6 +23,7 @@ const LaikaMember = () => {
           <TextDescription
             isFade={1}
             content="Conviértete en miembro, recibe beneficios exclusivos y dale lo mejor a tu mascota"
+            optionalStyle={{textAlign: 'center'}}
           />
         </View>
       </View>

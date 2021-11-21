@@ -22,12 +22,19 @@ const TextDescription = ({
     <>
       {versionLow ? (
         <Text
-          style={[text.sectionDescription, highlight, textBold, optionalStyle]}>
+          style={[
+            {textAlign: 'justify'},
+            text.sectionDescription,
+            highlight,
+            textBold,
+            optionalStyle,
+          ]}>
           {content}
         </Text>
       ) : (
         <Text
           style={[
+            {textAlign: 'justify'},
             text.sectionDescriptionLow,
             textBold,
             highlight,

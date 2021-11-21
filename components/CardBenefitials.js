@@ -115,7 +115,7 @@ const CardBenefitials = () => {
                 <TextDescription
                   isFade={1}
                   versionLow={1}
-                  content="Bono de netflix para maratonear"
+                  content="Bono de Netflix para maratonear"
                   optionalStyle={{
                     fontWeight: 'normal',
                   }}
@@ -130,7 +130,7 @@ const CardBenefitials = () => {
                 <TextDescription
                   isFade={1}
                   versionLow={1}
-                  content="Beneficiarios en restaurantes y tiendas"
+                  content="Beneficios en restaurantes y tiendas"
                   optionalStyle={{
                     fontWeight: 'normal',
                   }}
@@ -145,7 +145,7 @@ const CardBenefitials = () => {
                 <TextDescription
                   versionLow={1}
                   isFade={1}
-                  content="Por cada pedido que hagas donaremos un porcentaje a una fundación"
+                  content="Por cada pedido que hagas, donaremos un porcentaje a una fundación"
                   optionalStyle={{
                     fontWeight: 'normal',
                   }}

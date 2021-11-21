@@ -12,7 +12,12 @@ const text = StyleSheet.create({
   },
   sectionDescription: {
     marginTop: 8,
-    fontSize: 15,
+    fontSize: 18,
+    fontWeight: '400',
+  },
+  sectionDescriptionLow: {
+    marginTop: 8,
+    fontSize: 12,
     fontWeight: '400',
   },
   highlight: {

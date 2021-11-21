@@ -1,12 +1,15 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
 import text from '../styles/text';
+import colors from '../styles/colors';
 
 const TextDescription = ({
   isHighlight = 0,
   isFade = 0,
   textWeight = 0,
   content = 'Empty',
+  versionLow = 1,
+  optionalStyle = {},
 }) => {
   const highlight = isHighlight
     ? {color: colors.sunshineGold}
@@ -14,12 +17,24 @@ const TextDescription = ({
     ? {color: 'white', opacity: 0.7}
     : {color: 'white'};
 
-  const textBold = textWeight ? {fontWeight: '500'} : {};
+  const textBold = textWeight ? {fontWeight: 'bold'} : {fontWeight: '400'};
   return (
     <>
-      <Text style={[text.sectionDescription, highlight, textBold]}>
-        {content}
-      </Text>
+      {versionLow ? (
+        <Text style={[text.sectionDescription, highlight, textBold]}>
+          {content}
+        </Text>
+      ) : (
+        <Text
+          style={[
+            text.sectionDescriptionLow,
+            textBold,
+            highlight,
+            optionalStyle,
+          ]}>
+          {content}
+        </Text>
+      )}
     </>
   );
 };
